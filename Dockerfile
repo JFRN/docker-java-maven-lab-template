@@ -17,7 +17,7 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
 ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "/root/.m2"
 
-COPY pom.xml /app
-COPY src/ /app/src/
+#COPY pom.xml /app
+#COPY src/ /app/src/
 
-CMD ["mvn", "deploy"]
+#CMD ["mvn", "-DskipTests=true" ,"install"]
